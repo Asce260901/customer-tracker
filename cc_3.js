@@ -15,11 +15,13 @@ let customers = [
     purchases:["Toy car","Book The name of god","Red Paint"]
    }
 ];
-console.log("Original customer list:", customers);
 
 customers.push({
     full_name: "Rolando Artiga",
     email: "theartigasrule@gmail.com",
     purchases: ["Gloves","Shovel","Plastic bags"]
 });
-console.log("New Customer Added:", customers);
+
+customers.shift()
+
+console.log("First customer removed:", customers);
