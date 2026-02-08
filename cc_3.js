@@ -17,7 +17,7 @@ let customers = [
 ];
 //Add new customer
 customers.push({
-    full_name: "Rolando Artiga",
+    fullName: "Rolando Artiga",
     email: "theartigasrule@gmail.com",
     purchases: ["Gloves","Shovel","Plastic bags"]
 });
@@ -37,6 +37,6 @@ console.log("updated Customer list:", customers);
 //Loop
 customers.forEach((customer) => {
     console.log(
-        `Full name: ${customer.full_name} , Email: ${customer.email} , Total purchases: ${customer.purchases.length}`
+        `Full name: ${customer.fullName} , Email: ${customer.email} , Total purchases: ${customer.purchases.length}`
     );
 });
