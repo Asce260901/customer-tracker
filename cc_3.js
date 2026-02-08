@@ -15,13 +15,28 @@ let customers = [
     purchases:["Toy car","Book The name of god","Red Paint"]
    }
 ];
-
+//Add new customer
 customers.push({
     full_name: "Rolando Artiga",
     email: "theartigasrule@gmail.com",
     purchases: ["Gloves","Shovel","Plastic bags"]
 });
 
+//Remove 1st coustomer
 customers.shift()
 
-console.log("First customer removed:", customers);
+//Updated email
+customers[2].email = "r.artigas@yahoo.com";
+
+//Add new purchase
+customers[1].purchases.push("Candle set");
+
+//Show all customers
+console.log("updated Customer list:", customers);
+
+//Loop
+customers.forEach((customer) => {
+    console.log(
+        `Full name: ${customer.full_name} , Email: ${customer.email} , Total purchases: ${customer.purchases.length}`
+    );
+});
